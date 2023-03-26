@@ -6,15 +6,17 @@ with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 #define TOTALBYTES    100*1024
 #define BYTEINCREMENT 10*1024
-#include "util.h"
-#include "jsonwriter.h"
 
 #if defined OS_WINDOWS
 #include <windows.h>
 #include <tchar.h>
 #include <pdh.h>
 #include <stdio.h>
+#include <winsvc.h>
 #endif
+
+#include "util.h"
+#include "jsonwriter.h"
 
 class PerformanceMng{
 public:

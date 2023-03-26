@@ -4,12 +4,17 @@ Public License, v. 2.0. If a copy of the MPL was not distributed
 with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 
-#include "util.h"
-#include "jsonwriter.h"
 
 #if defined OS_WINDOWS
 #include <windows.h>
+#include <tchar.h>
+#include <pdh.h>
+#include <stdio.h>
+#include <winsvc.h>
 #endif
+
+#include "util.h"
+#include "jsonwriter.h"
 
 using namespace std;
 

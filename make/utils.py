@@ -16,6 +16,9 @@ import codecs
 import subprocess
 import json
 import xml.etree.ElementTree
+import ssl
+ 
+ssl._create_default_https_context = ssl._create_unverified_context
 
 MAIN_URL = "https://www.dwservice.net/"
 

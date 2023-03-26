@@ -5,15 +5,15 @@ with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 
 
-#include "util.h"
-#include "jsonwriter.h"
-
 #if defined OS_WINDOWS
 #include <windows.h>
 #include <string>
 #include <tlhelp32.h>
 #include <Psapi.h>
 #endif
+#include "util.h"
+#include "jsonwriter.h"
+
 using namespace std;
 
 class TaskMng{
